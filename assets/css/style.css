@@ -1,0 +1,570 @@
+/*
+
+Template Name: Xenon
+Author: Nahian
+Description: this template is perfect for any kind of personal portfolio website.
+
+Index
+---
+01. Base
+02. Section Title
+03. Button
+04. Header
+
+*/
+
+@font-face {
+  font-family: rough;
+  src: url('../webfonts/rough.ttf');
+}
+
+/* 01. Base */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.fix:before, .fix:after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.bg{    
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 2;
+
+}
+.bg:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #333;
+	opacity: .8;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+	z-index: -1;
+  left: 0;
+  top: 0;
+}
+a{
+    text-decoration: none;
+    color: #333;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+ul{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+    vertical-align: middle;
+}
+.f-left{
+    float: left;
+}
+.f-right{
+    float: right;
+}
+.pt-80{
+  padding-top: 80px;
+}
+.pb-80{
+  padding-bottom: 80px;
+}
+.pb-50{
+  padding-bottom: 50px;
+}
+.text-center{
+  text-align: center;
+}
+.text-uppercase{
+  text-transform: uppercase;
+}
+
+/* 02. Section Title */
+.section-title{
+  margin-bottom: 50px;
+}
+.section-title h4 {
+  font-size: 40px;
+  text-transform: capitalize;
+  font-weight: 600;
+  position: relative;
+  margin-bottom: 20px;
+  padding-bottom: 30px;
+}
+.section-title h4:before, .section-title h4:after{
+  position: absolute;
+  content: "";
+  background-color: #ff3636;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  left: 50%;
+}
+.section-title h4:before {
+  width: 60px;
+  height: 2px;
+  bottom: 0;
+}
+.section-title h4:after {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  bottom: -4px;
+}
+
+.container{
+    width: 1170px;
+    margin: auto;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333;
+}
+
+/* 03. Button */
+.btn {
+	background-color: #ff3636;
+	color: #fff;
+	text-transform: capitalize;
+	padding: 10px 40px;
+	display: inline-block;
+	font-size: 18px;
+}
+.btn:hover{
+  background-color: #333;
+}
+
+/* 04. Header */
+
+.logo a {
+    font-size: 24px;
+    border: 1px solid #333;
+    padding: 10px 40px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .logo {
+    width: 200px;
+    margin-right: 30px;
+  }
+  .menu ul li {
+    display: inline-block;
+  }
+  .menu {
+    width: 940px;
+    margin-top: 10px;
+  }
+  .menu ul {
+    text-align: right;
+  }
+  .menu ul li a {
+    display: block;
+    margin-left: 10px;
+    font-size: 18px;
+  }
+  .menu ul li a:hover{
+    color: #ff3636;
+  }
+  .header-area {
+    padding: 20px 0;
+  }
+  
+.header-area.header-fixed {
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  right: 0;
+}
+.header-area.header-fixed a {
+  color: #fff;
+}
+.header-area.header-fixed .logo a {
+  border-color: #fff;
+}
+
+
+/* Bannar */
+
+.bannar-area {
+    height: 100vh;
+  }
+  .bannar {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    width: 100%;
+  }
+.bannar h1 {
+  font-size: 80px;
+  text-transform: capitalize;
+  font-family: 'rough';
+}
+.bannar h4 {
+  margin: 40px 0;
+  text-transform: capitalize;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+/* Services */
+
+.services-area {
+  background-color: #f4f4f4;
+}
+.single-service {
+  text-align: center;
+  width: 370px;
+  margin-right: 30px;
+  background-color: #fff;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+.single-service:nth-child(3), .single-service:nth-child(6) {
+  margin-right: 0;
+}
+.single-service i {
+  background-color: #ff3636;
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 20px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+.single-service h4 {
+  text-transform: capitalize;
+  font-size: 24px;
+  margin: 16px 0;
+}
+.single-service:hover i{
+  border-radius: 50%;
+}
+
+/* About */
+
+
+.about-img {
+  width: 340px;
+  margin-right: 30px;
+}
+.about-content {
+  width: 800px;
+}
+
+.about-content h4 {
+  color: #ff3636;
+  font-size: 50px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.about-content h5 {
+  font-size: 22px;
+  text-transform: capitalize;
+  font-weight: 500;
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+.about-content p {
+  margin-bottom: 25px;
+}
+.single-about-skill {
+  width: 380px;
+  margin-right: 10px;
+}
+.single-about-skill span {
+  display: block;
+  text-transform: capitalize;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+.about .btn {
+  margin-top: 30px;
+}
+
+/* Timeline */
+
+
+.timeline ul {
+  position: relative;
+}
+.timeline ul:before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  background-color: #ff3636;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.timeline ul li{
+  clear: both;
+  display: table;
+  position: relative;
+}
+.timeline ul li .timeline-content {
+  width: 48%;
+  border: 2px solid #ff3636;
+  text-align: right;
+  padding: 20px;
+}
+.timeline ul li:nth-child(even) .timeline-content{
+  float: right;
+  text-align: left;
+}
+.timeline ul li:after {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #ff3636;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+/* Projects */
+
+.single-project {
+  width: 390px;
+  background-size: cover;
+  background-position: center;
+  padding-top: 30%;
+  position: relative;
+}
+
+.project-content i {
+  border: 1px solid #fff;
+  padding: 10px;
+  border-radius: 50%;
+}
+.project-content h4 {
+  text-transform: capitalize;
+  font-size: 22px;
+  margin-top: 16px;
+}
+.project-content h4 span {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.project-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  color: #fff;  
+  opacity: 0;  
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  visibility: hidden;
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+.project-overlay:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  left: 0;
+  top: 0;
+  opacity: .8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  z-index: -1;
+}
+.project-content {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+	text-align: center;
+	width: 100%;
+}
+.single-project:hover .project-overlay{
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  visibility: visible;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+/* Price */
+.price-area{
+  background-color: #f4f4f4;
+}
+
+.single-price {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px 30px;
+  width: 376px;
+  margin-right: 20px;
+}
+.single-price:last-child {
+  margin-right: 0;
+}
+.single-price h4 {
+  text-transform: uppercase;
+  font-size: 24px;
+}
+.single-price span {
+  font-size: 60px;
+  font-weight: 800;
+  margin: 50px 0;
+  display: block;
+}
+.single-price ul {
+  margin-bottom: 30px;
+}
+.single-price ul li {
+  border-bottom: 1px dashed #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.single-price ul li:last-child {
+  border-bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* Team */
+
+.single-team {
+  margin-right: 30px;
+  width: 370px;
+  background-size: cover;
+  background-position: top center;
+  padding-top: 30%;
+  position: relative;
+  overflow: hidden;
+}
+.single-team:last-child {
+  margin-right: 0;
+}
+.team-overlay {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -118px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+.team-overlay h4 {
+  text-transform: capitalize;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.team-overlay h4 span {
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+.team-overlay a {
+  color: #fff;
+  margin: 0 5px;
+}
+.single-team:hover .team-overlay {
+  bottom: 0;
+}
+
+.contact-form {
+  width: 670px;
+  margin-right: 30px;
+}
+.title {
+  text-transform: capitalize;
+  font-size: 24px;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.title:before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  background-color: #ff3636;
+  left: 0;
+  bottom: 0;
+}
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 3px;
+  border-left: 3px solid #ff3636;
+  margin-bottom: 20px;
+}
+.contact-form input[type="submit"] {
+  width: auto;
+  background-color: #ff3636;
+  padding: 10px 60px;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+.contact-info {
+  width: 470px;
+}
+.single-contact {
+  position: relative;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  padding-left: 55px;
+}
+.single-contact:last-child {
+  border-bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.single-contact i {
+  position: absolute;
+  left: 0;
+  top: 3px;
+  background-color: #ff3636;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+}
+.single-contact h4 {
+  font-size: 22px;
+  font-weight: 600;
+}
+.single-contact h4 span {
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+}
